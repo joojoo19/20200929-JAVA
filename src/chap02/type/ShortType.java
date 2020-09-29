@@ -2,7 +2,7 @@ package chap02.type;
 
 public class ShortType {
 	public static void main(String[] args) {
-		// short : 2byte
+		// short : 2byte (계산기에서 word)
 		  
 		short shortValue;
 		shortValue1 = 32767; // 최대값
