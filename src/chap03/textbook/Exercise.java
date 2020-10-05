@@ -25,6 +25,7 @@ public class Exercise {
 		int lengthBottom = 10;
 		int height = 7;
 		double area = (double)(lengthTop+lengthBottom)*height/2;
+		System.out.println(area);
 		
 		System.out.println("------- 7번 ---------");
 		int x =10;
