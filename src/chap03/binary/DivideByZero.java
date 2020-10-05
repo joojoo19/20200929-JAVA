@@ -12,7 +12,7 @@ public class DivideByZero {
 		double a = 5.0;
 		double b = -0.0;
 	 
-		double c = a / b; // 남은 몫은 무한 Infinity
+		double c = a / b; // 나눈 몫은 무한 Infinity
 		System.out.println(c);
 		
 		double d = a % b; // NaN(Not a Number)
