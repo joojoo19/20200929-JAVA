@@ -7,7 +7,7 @@ public class cp02_1 {
 		
 		int intValue = byteValue;
 		int intValue2 = charValue;
-		short shortValue = charValue;
+		short shortValue = charValue; // 같은 2byte 지만 저장 방법이 다름.
 		double doubleValue = byteValue;
 	}
 
