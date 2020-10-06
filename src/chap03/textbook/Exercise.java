@@ -17,7 +17,7 @@ public class Exercise {
 		System.out.println("------- 5번 ---------");
 		
 		int value = 356;
-		System.out.println(value - 56);
+		System.out.println(value-(value % 100));
 		
 		System.out.println("------- 6번 ---------");
 		
@@ -31,15 +31,15 @@ public class Exercise {
 		int x =10;
 		int y = 5;
 		
-		System.out.println((x>7) && (y<=5));
-		System.out.println((x%3 == 2) || (y%2 != 1));
+		System.out.println((x>7) && (y<=5)); // true && true
+		System.out.println((x%3 == 2) || (y%2 != 1)); // false || false
 		
 		System.out.println("------- 8번 ---------");
 		
 		double a = 5.0;
 		double b = 0.0;
 		
-		double z = x % y;
+		double z = a % b;
 		
 		if(Double.isNaN(z)) {
 			System.out.println("0.0으로 나눌 수 없습니다.");
