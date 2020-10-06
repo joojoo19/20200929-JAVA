@@ -19,7 +19,7 @@ public class StringEx1 {
 		String str4 = "py";
 		String str5 = "thon";
 		String str6 = str4 + str5;
-		
+		s
 		System.out.println(str2);
 		System.out.println(str6);
 		
@@ -30,7 +30,7 @@ public class StringEx1 {
 		String str7 = "자바 프로그래밍";
 		int a = str7.indexOf("프로");
 		System.out.println(a);
-		
+		int
 		// length 
 		String str8 = "이것이 자바다     java";
 		int b = str8.length();
