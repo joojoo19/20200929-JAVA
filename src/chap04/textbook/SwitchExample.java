@@ -17,7 +17,7 @@ public class SwitchExample {
 		case 4:
 			System.out.println("4번이 나왔습니다");
 			break;
-		case 5;
+		case 5:
 			System.out.println("5번이 나왔습니다");
 			break;
 		case 6:
