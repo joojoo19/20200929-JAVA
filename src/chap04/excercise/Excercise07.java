@@ -17,7 +17,27 @@ public class Excercise07 {
 			
 			String line = scanner.nextLine();
 			int num = Integer.valueOf(line);
+			int a = num;
 			
+			while(a==1) {
+				System.out.println("예금액 >");
+				line = scanner.nextLine();
+				break;
+			}
+			while(a==2) {
+				System.out.println("출금액 >");
+				line = scanner.nextLine();
+				break;
+			}
+			while(a==3) {
+				System.out.println("잔고 >");
+				line = scanner.nextLine();
+				break;
+			}
+			while(a==4) {
+				run = false;
+				break;
+			}
 			
 		}
 		
