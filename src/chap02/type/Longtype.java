@@ -4,7 +4,7 @@ public class Longtype {
 	public static void main(String[] args) {
 		// long : 8byte (64bit)(계산기 qword)
 		// 최대값 : 9223372036854775807
-		// 최소값 : -922337203685477508
+		// 최소값 : -9223372036854775808
 		// 정수 리터럴을 값은 int 최대값을 넘을 수 없음.
 		
 		long longValue;
@@ -13,7 +13,7 @@ public class Longtype {
 		
 		longValue = 9_223_372_036_854_775_807L;
 		
-		longValue = -922337203685477508L;
+		longValue = -9223372036854775808L;
 		System.out.println(longValue);
 	}
 
