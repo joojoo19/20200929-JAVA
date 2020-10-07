@@ -2,12 +2,12 @@ package chap04.textbook;
 
 public class IfDiceExample {
 	public static void main(String[] args) {
-		int num = (int)(Math.random()*6)+1;
-		
-		if(num ==1) {
+		int num = (int) (Math.random() * 6) + 1;
+
+		if (num == 1) {
 			System.out.println("1번이 나왔습니다");
-			
-		} else if(num == 2) {
+
+		} else if (num == 2) {
 			System.out.println("2번이 나왔습니다");
 		} else if (num == 3) {
 			System.out.println("3번이 나왔습니다");
