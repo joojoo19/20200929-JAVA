@@ -3,9 +3,14 @@ package chap04.excercise;
 public class Excercise06 {
 	public static void main(String[] args) {
 		
-		for(int i =1,j=1 ; i<=5, j<=i; i++,j++) {			
-			  System.out.println("* ");
-			  continue;	  
+		int i =0;
+		int j =0;
+		
+		for(i=0; i<=5; i++) {
+			for(j=0; j<=i; j++) {
+				System.out.println("*");
+			}
+			System.out.println();
 		}
 	}
 }
