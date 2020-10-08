@@ -22,15 +22,19 @@ public class Excercise07 {
 			while(a==1) {
 				System.out.println("예금액 >");
 				line = scanner.nextLine();
+				int b = Integer.valueOf(line);
+				balance = balance + b;
 				break;
 			}
 			while(a==2) {
 				System.out.println("출금액 >");
 				line = scanner.nextLine();
+				int c = Integer.valueOf(line);
+				balance = balance - c;
 				break;
 			}
 			while(a==3) {
-				System.out.println("잔고 >");
+				System.out.println("잔고 >" + balance);
 				line = scanner.nextLine();
 				break;
 			}
