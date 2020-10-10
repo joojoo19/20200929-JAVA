@@ -34,7 +34,7 @@ public class Excercise09 {
 				
 			} else if(selectNo == 4) {
 				int sum = 0;
-				int max = Integer.MIN_VALUE;
+				int max = Integer.MIN_VALUE; // 데이터 타입이 표현할 수 있는 범위중 가장 작은 수.
 				double avg = 0.0;
 				
 				for(int i =0; i<scores.length; i++) {
