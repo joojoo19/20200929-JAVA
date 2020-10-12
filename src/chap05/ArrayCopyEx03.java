@@ -12,6 +12,7 @@ public class ArrayCopyEx03 {
 			
 			for(int j=0; j<arr1[i].length; j++) {
 				newArr[j] = arr1[i][j]; // 새로운 열 생성
+				System.out.println("newArr[j] : " + newArr[j]);
 			}
 			arr2[i] =newArr;
 		}
