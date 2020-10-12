@@ -1,8 +1,8 @@
 package chap05.textbook;
 
 public class MainStringArrayArgument {
-	public static void main(String[] args) {
-		if(args.length !=2) {
+	public static void main(String[] args) { // String[] args : 스트링 배열타입
+		if(args.length !=2) { 
 			System.out.println("프로그램의 사용법");
 			System.out.println("java MainStringArrayArgument num1 num2");
 			System.exit(0);
@@ -10,8 +10,8 @@ public class MainStringArrayArgument {
 		String strNum1 = args[0];
 		String strNum2 = args[1];
 		
-		int num1 = Integer.paraseInt(strNum1);
-		int num2 = Integer.paraseInt(strNum2);
+		int num1 = Integer.parseInt(strNum1); // 문자열을 정수로 전환
+		int num2 = Integer.parseInt(strNum2);
 		
 		int result = num1 + num2;
 		System.out.println(num1 + " + " + num2 + " = " + result);
