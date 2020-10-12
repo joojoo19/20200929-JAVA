@@ -6,10 +6,10 @@ public class Hero {
 	
 	public Hero(String name, int power) {
 		this.name = name; // this : 앞으로 만들어질 인스턴스를 대체하는 키워드(참조변수).
-		this.power = power;
+		this.power = power; 
 	}
 	
 	public Hero(String name) {
-		this(name, 100);
+		this(name, 100); // this( , )는 다른 생성자를 가리킴.
 	}
 }
