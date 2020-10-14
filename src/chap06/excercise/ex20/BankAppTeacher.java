@@ -3,7 +3,7 @@ package chap06.excercise.ex20;
 import java.util.Scanner;
 
 public class BankAppTeacher {
-	private static Account[] accountArray = new Account[100];
+	private static Account[] accountArray = new Account[100]; //참조값을 저장할 수 있는 100개의 공간 생성
 	private static Scanner scanner = new Scanner(System.in);
 	private static int size = 0;
 
@@ -111,15 +111,15 @@ public class BankAppTeacher {
 		System.out.println("계좌생성");
 		System.out.println("-----------");
 		System.out.print("계좌번호: ");
-		ano = scanner.next();
+		ano = scanner.next(); // next() :string 입력. 
 		System.out.print("계좌주: ");
 		owner = scanner.next();
 		System.out.print("초기입금액: ");
 		money = scanner.nextInt();
 		
 		Account account = new Account(ano, owner, money);
-		accountArray[size] = account;
-		size++;
+		accountArray[size] = account; //두번째 값을 입력할 때 변수가 늘어나야 하기 때문에 size로 변수 선언.
+		size++; 
 		
 		System.out.println("결과 : 계좌가 생성되었습니다.");
 	}
