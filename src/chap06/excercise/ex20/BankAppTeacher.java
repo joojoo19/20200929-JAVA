@@ -122,6 +122,7 @@ public class BankAppTeacher {
 		size++; 
 		
 		System.out.println("결과 : 계좌가 생성되었습니다.");
+		return;
 	}
 	
 }
