@@ -1,13 +1,11 @@
-package chap09.textbook.s090401;
+package chap09.textbook.s090502;
 
 public class Button {
 	OnClickListener listener;
-
-
-	public void setOnCkickListener(OnClickListener listener) {
+	
+	void setOnClickListener(OnClickListener listener) {
 		this.listener = listener;
 	}
-	
 	void touch() {
 		listener.onClick();
 	}
