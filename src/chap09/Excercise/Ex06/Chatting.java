@@ -1,22 +1,26 @@
 package chap09.Excercise.Ex06;
 
 public class Chatting {
+	class Chat {
+		void start() {}
+		void sendMessage(String message) {}
+	}
+
 	void startChat(String chatId) {
 		String nickName = null;
 		nickName = chatId;
+		final String nickNamecopy = nickName;
+
 		Chat chat = new Chat() {
-			public void start() {
-				while(true) {
+			@Override
+			void start() {
+				while (true) {
 					String inputData = "안녕하세요";
-					String message = "[" + nickName +"] " +inputData;
+					String message = "[" + nickNamecopy + "]" + inputData;
 					sendMessage(message);
 				}
 			}
 		};
-		chat.start();
-	}
-	class chat {
-		void start() {}
-		void sendMessage(String message) {}
+
 	}
 }
