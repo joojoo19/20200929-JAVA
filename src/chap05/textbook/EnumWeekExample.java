@@ -18,13 +18,13 @@ public class EnumWeekExample {
 			today = Week.MONDAY;
 			break;
 		case 3:
-			today = Week.TUEDAY;
+			today = Week.TUESDAY;
 			break;
 		case 4:
-			today = Week.WENDEDAY;
+			today = Week.WENDESDAY;
 			break;
 		case 5:
-			today = Week.THURDAY;
+			today = Week.THURSDAY;
 			break;
 		case 6:
 			today = Week.FRIDAY;

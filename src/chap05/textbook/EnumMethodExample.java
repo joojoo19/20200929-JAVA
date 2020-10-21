@@ -13,7 +13,7 @@ public class EnumMethodExample {
 		
 		//compareTo() 메소드
 		Week day1 = Week.MONDAY;
-		Week day2 = Week.WEDENSDAY;
+		Week day2 = Week.WENDESDAY;
 		int result1 = day1.compareTo(day2);
 		int result2 = day2.compareTo(day1);
 		System.out.println(result1);
@@ -22,15 +22,15 @@ public class EnumMethodExample {
 		//valueOf() 메소드
 		if(args.length == 1) {
 			String strDay = args[0];
-			Week weekday = Week.valueOf(strDay);
-			if(weekDay == Week.SARTURDAY || weekDay == Week.SUNDAY) {
+			Week weekDay = Week.valueOf(strDay);
+			if(weekDay == Week.SATURDAY || weekDay == Week.SUNDAY) {
 				System.out.println("주말이군요");
 			} else {
 				System.out.println("평일이군요");
 			}
 		}
 		//valueOf() 메소드
-		Week[] days = Week.value();
+		Week[] days = Week.values();
 		for(Week day : days) {
 			System.out.println(day);
 		}
