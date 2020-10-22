@@ -1,4 +1,4 @@
-package chap06.textbook.s0607005;
+package chap06.textbook.s060705;
 
 public class Car {
 	//필드
