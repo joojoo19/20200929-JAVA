@@ -67,7 +67,7 @@ public class WarmUp1 {
 
 		return left + right;
 	}
-	
+
 	public String frontBack(String str) {
 		int len = str.length();
 
@@ -143,4 +143,148 @@ public class WarmUp1 {
 
 		return t1 || t2;
 	}
+
+	public boolean in1020(int a, int b) {
+		boolean ina = a >= 10 && a <= 20;
+		boolean inb = b >= 10 && b <= 20;
+
+		return ina || inb;
+	}
+
+	public boolean hasTeen(int a, int b, int c) {
+		boolean ateen = a >= 13 && a <= 19;
+		boolean bteen = b >= 13 && b <= 19;
+		boolean cteen = c >= 13 && c <= 19;
+
+		return ateen || bteen || cteen;
+	}
+
+	public boolean loneTeen(int a, int b) {
+		boolean ateen = a >= 13 && a <= 19;
+		boolean bteen = b >= 13 && b <= 19;
+
+		return ateen ^ bteen;
+	}
+
+	public String delDel(String str) {
+		int idx = str.indexOf("del");
+
+		if (idx == 1) {
+			return str.replaceFirst("del", "");
+		} else {
+			return str;
+		}
+	}
+
+	public boolean mixStart(String str) {
+		if (str.length() >= 3) {
+			String ix = str.substring(1, 3);
+			if (ix.equals("ix")) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public String startOz(String str) {
+		String first = "";
+		if (str.length() >= 1) {
+			char f = str.charAt(0);
+			if (f == 'o') {
+				first = "o";
+			}
+		}
+
+		String second = "";
+		if (str.length() >= 2) {
+			char c = str.charAt(1);
+			if (c == 'z') {
+				second = "z";
+			}
+		}
+
+		return first + second;
+	}
+
+	public int intMax(int a, int b, int c) {
+		int max;
+
+		max = a > b ? a : b;
+		max = max > c ? max : c;
+
+		return max;
+	}
+
+	public int close10(int a, int b) {
+		int diffa = Math.abs(10 - a);
+		int diffb = Math.abs(10 - b);
+
+		if (diffa == diffb) {
+			return 0;
+		} else if (diffa < diffb) {
+			return a;
+		} else {
+			return b;
+		}
+	}
+
+	public boolean in3050(int a, int b) {
+		boolean a3040 = a >= 30 && a <= 40;
+		boolean b3040 = b >= 30 && b <= 40;
+		boolean a4050 = a >= 40 && a <= 50;
+		boolean b4050 = b >= 40 && b <= 50;
+
+		return (a3040 && b3040) || (a4050 && b4050);
+	}
+
+	public int max1020(int a, int b) {
+		int acopy = (a >= 10 && a <= 20) ? a : 0;
+		int bcopy = (b >= 10 && b <= 20) ? b : 0;
+
+		return acopy > bcopy ? acopy : bcopy;
+	}
+
+	public boolean stringE(String str) {
+		int cnt = 0;
+		for (int i = 0; i < str.length(); i++) {
+			char c = str.charAt(i);
+			if (c == 'e') {
+				cnt++;
+			}
+		}
+
+		return cnt >= 1 && cnt <= 3;
+	}
+
+	public boolean lastDigit(int a, int b) {
+		int alast = a % 10;
+		int blast = b % 10;
+
+		return alast == blast;
+	}
+
+	public String endUp(String str) {
+		int len = str.length();
+
+		if (len <= 3) {
+			return str.toUpperCase();
+		} else {
+			String front = str.substring(0, len - 3);
+			String last = str.substring(len - 3, len);
+			return front + last.toUpperCase();
+		}
+
+	}
+
+	public String everyNth(String str, int n) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i += n) {
+			res += str.charAt(i);
+		}
+
+		return res;
+	}
+
 }
