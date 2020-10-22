@@ -14,7 +14,7 @@ public class Container<T1, T2> {
 	}
 
 	public T2 getValue() {
-		return t2;
+		return this.t2;
 	}
 	
 	

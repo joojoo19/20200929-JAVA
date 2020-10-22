@@ -8,5 +8,8 @@ public static void main(String[] args) {
 	
 	int result2 = Util.compare(4.5, 3);
 	System.out.println(result2);
+	
+	int result3 = Util.compare(3.14, 3.14);
+	System.out.println(result3);
 }
 }

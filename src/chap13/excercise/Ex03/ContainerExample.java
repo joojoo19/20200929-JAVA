@@ -12,6 +12,11 @@ public class ContainerExample {
 		container2.set("홍길동", 35);
 		String name2 = container2.getKey();
 		int age = container2.getValue();
+		
+		System.out.println(name1);
+		System.out.println(job);
+		System.out.println(name2);
+		System.out.println(age);
 	}
 
 }
