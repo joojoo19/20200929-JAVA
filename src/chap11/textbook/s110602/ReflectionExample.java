@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 
 public class ReflectionExample {
 	public static void main(String[] args) throws Exception {
-		Class clazz = Class.forName("chap06.textbook.s061401.Car");
+		Class clazz = Class.forName("chap06.textbook.s060705.Car");
 
 		System.out.println("[클래스 이름]");
 		System.out.println(clazz.getName());
