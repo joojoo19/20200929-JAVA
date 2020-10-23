@@ -1,4 +1,4 @@
-package chap15.excercise;
+package chap15.excercise.ex07;
 
 public class Board {
 	private String title;
