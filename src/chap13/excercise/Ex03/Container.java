@@ -1,20 +1,20 @@
 package chap13.excercise.Ex03;
 
-public class Container<T1, T2> {
-	private T1 t1;
-	private T2 t2;
+public class Container<K, V> {
+	private K key;
+	private V value;
 	
-	public void set(T1 t1, T2 t2) {
-		this.t1 = t1;
-		this.t2 = t2;
+	public void set(K key, V vlaue) {
+		this.key = key;
+		this.value = value;
 	}
 
-	public T1 getKey() {
-		return t1;
+	public K getKey() {
+		return key;
 	}
 
-	public T2 getValue() {
-		return this.t2;
+	public V getValue() {
+		return this.value;
 	}
 	
 	
