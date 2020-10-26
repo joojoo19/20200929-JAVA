@@ -5,7 +5,7 @@ import java.util.Stack;
 public class StackExample {
 	public static void main(String[] args) {
 		Stack<Coin> coinBox = new Stack<Coin>();
-		
+//		LIFO last in first out
 		coinBox.push(new Coin(100));
 		coinBox.push(new Coin(50));
 		coinBox.push(new Coin(500));
